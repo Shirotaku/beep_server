@@ -15,10 +15,10 @@ def beep_ok():
     return "OK beep triggered!", 200
 
 @app.route('/beep_ok_2', methods=['GET'])
-def beep_ok():
+def beep_ok_2():
     # Zwei kurze Beep-Signale für "OK"
     os.system('beep -f 1000 -l 100 && sleep 0.1 && beep -f 1000 -l 100 && beep -f 1000 -l 100 && sleep 0.1 && beep -f 1000 -l 100')
-    return "OK beep triggered!", 200
+    return "OK beep 2x triggered!", 200
 
 @app.route('/beep_error', methods=['GET'])
 def beep_error():

@@ -1,6 +1,6 @@
 FROM python:alpine3.19
 
-RUN apt-get update && apt-get install -y beep
+RUN apk update && apk add beep
 
 RUN pip install Flask
 
