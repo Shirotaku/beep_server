@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:alpine3.19
 
 RUN apt-get update && apt-get install -y beep
 
